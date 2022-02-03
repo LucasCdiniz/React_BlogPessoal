@@ -15,7 +15,7 @@ function CadastroPost() {
     const [temas, setTemas] = useState<Tema[]>([])
     const token = useSelector<TokenState, TokenState["tokens"]>(
         (state) => state.tokens
-    );
+      );
 
     useEffect(() => {
         if (token == "") {
@@ -46,7 +46,7 @@ function CadastroPost() {
         tema: null
     })
 
-    useEffect(() => {
+    useEffect(() => { 
         setPostagem({
             ...postagem,
             tema: tema
